@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,29 +17,66 @@
   </style>
 </head>
 <body>
+  <div class="maincontainer">
+    <div class="leftcontainer">
+      <div class="resulttext">
+        Your Result
+      </div>
+      <div class="resultcircle">
+        <div class="bignumber">
+          76
+        </div>
+        <div class="smallnumber">
+          of 100
+        </div>
+        
 
-  Your Result
-  76
-  of 100
+      </div>
+      
+      <div class="bigresulttext">
+        Great
+      </div>
+      <div class="smallresulttext">
+        You scored higher than 65% of <br>the people who have taken <br>these tests.
+      </div>
+    </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <div class="rightcontainer">
+      <div class="summary">
+        Summary
+      </div>
+      
+      <div class="cont reaction">
+        <img src="./assets/images/icon-reaction.svg" alt="reaction">
+        <div class="text">Reaction</div>
+        <div class="number"><span>80</span> / 100</div>
 
-  Reaction
-  80 / 100
+      </div>
+      <div class="cont memory">
+        <img src="./assets/images/icon-memory.svg" alt="reaction">
+        <div class="text">Memory</div>
+        <div class="number"><span>92</span> / 100</div>
+      </div>
+      <div class="cont verbal">
+        <img src="./assets/images/icon-verbal.svg" alt="reaction">
+        <div class="text">Verbal</div>
+        <div class="number"><span>61</span> / 100</div>
+      </div>
+      <div class="cont visual">
+        <img src="./assets/images/icon-visual.svg" alt="reaction">
+        <div class="text">Visual</div>
+        <div class="number"><span>72</span> / 100</div>
+      </div>
+      <div class="cont btncontinue">
+        <a href="#">Continue</a>
+      </div>
 
-  Memory
-  92 / 100
+    
+      
+      
+    </div>
+  </div>
 
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
